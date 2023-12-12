@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Poll Application</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="the_polling_grounds_await_your_question">The Polling Grounds Await Your Question</string>
+</resources>
