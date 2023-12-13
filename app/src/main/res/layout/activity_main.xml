@@ -18,38 +18,33 @@
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/fragmentContainerView"
-            android:name="com.example.pollapplication.CurrentPolls"
+            android:name="com.example.pollapplication.fragments.CurrentPolls"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="15dp"/>
 
-
     </LinearLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
+        android:id="@+id/add_poll"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:outlineAmbientShadowColor="@color/black"
         app:shapeAppearanceOverlay="@style/fab_square"
         android:layout_marginEnd="@dimen/fab_margin"
         app:layout_constraintBottom_toTopOf="@+id/toolbar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:backgroundTint="@color/purple_200"
         app:borderWidth="0dp"
-        app:elevation="0dp"
-        android:fadingEdge="horizontal|vertical"
+        app:elevation="-10dp"
         android:fadingEdgeLength="23dp"
         app:fabSize="normal"
         android:layout_marginBottom="16dp"
-        app:srcCompat="@drawable/baseline_add_chart_24" />
+        android:src="@drawable/baseline_add_chart_24"/>
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="426dp"
         android:layout_height="120dp"
-        android:layout_weight="1"
         android:background="@color/white"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
@@ -59,53 +54,70 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <LinearLayout
+        android:id="@+id/current_polls_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:clickable="true"
+        android:focusable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintHorizontal_bias="0.30"
         app:layout_constraintStart_toStartOf="@+id/toolbar"
         app:layout_constraintTop_toTopOf="@+id/toolbar"
         app:layout_constraintVertical_bias="0.10">
+
         <ImageView
-            android:id="@+id/money"
-            android:layout_width="60dp"
-            android:layout_height="63dp"
+            android:id="@+id/current_polls"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
             android:layout_marginTop="4dp"
+            android:background="@drawable/selected_item"
             android:focusableInTouchMode="true"
-            android:padding="12dp"
             android:layout_gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
             app:srcCompat="@drawable/ic_poll" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Current Polls"
-            android:textStyle="bold"
-            android:layout_marginTop="-10dp"/>
+            android:layout_gravity="center"
+            android:textStyle="bold"/>
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/history_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:clickable="true"
+        android:focusable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintHorizontal_bias="0.70"
         app:layout_constraintStart_toStartOf="@+id/toolbar"
         app:layout_constraintTop_toTopOf="@+id/toolbar"
         app:layout_constraintVertical_bias="0.10"
         >
 
         <ImageView
-            android:id="@+id/task"
-            android:layout_width="60dp"
-            android:layout_height="63dp"
+            android:id="@+id/history"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
             android:layout_marginTop="2dp"
             android:focusableInTouchMode="true"
-            android:padding="12dp"
+            android:layout_gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
             app:srcCompat="@drawable/ic_history" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="History"
+            android:layout_gravity="center"
+            android:textStyle="bold"/>
     </LinearLayout>
 
 

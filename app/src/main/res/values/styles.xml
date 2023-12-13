@@ -2,7 +2,11 @@
 <resources>
 
     <style name="fab_square" parent="">
-        <item name="cornerFamily">rounded</item>
         <item name="cornerSize">12dp</item>
+    </style>
+
+    <style name="fab_square1">
+        <item name="strokeWidth">12dp</item>
+        <item name="strokeColor">@color/black</item>
     </style>
 </resources>

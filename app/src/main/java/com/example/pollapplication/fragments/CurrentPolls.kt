@@ -1,10 +1,11 @@
-package com.example.pollapplication
+package com.example.pollapplication.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.pollapplication.R
 
 /**
  * A simple [Fragment] subclass.

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.CreatePollFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/baseline_arrow_back_24" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:text="@string/create_poll"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/dark_purple"
+        android:textSize="17sp"
+        android:text="@string/poll_question"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        android:hint="@string/ask_a_question"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:textStyle="bold"
+        android:textColor="@color/dark_purple"
+        android:textSize="17sp"
+        android:text="@string/answer_option"/>
+    <TextView
+        android:id="@+id/add_option_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        style="@style/fab_square"
+        android:layout_marginTop="7dp"
+        android:hint="@string/add_options"
+        android:layout_marginStart="16dp"/>
+    <LinearLayout
+        android:id="@+id/add_option_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:elevation="12dp"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:background="@drawable/button_effect"
+        android:focusable="true">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/baseline_add_circle_outline_24"
+            app:tint="@color/white" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
+            android:layout_marginRight="5dp"
+            android:textStyle="bold"
+            android:text="@string/add_option"/>
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/add_option_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:layout_margin="20dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:padding="5dp"
+        android:elevation="12dp"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:focusable="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:paddingTop="10dp"
+            android:clickable="true"
+            android:paddingBottom="10dp"
+            android:textStyle="bold"
+            android:background="@drawable/button_effect"
+            android:text="@string/create"
+            android:focusable="true" />
+    </LinearLayout>
+
+</LinearLayout>
