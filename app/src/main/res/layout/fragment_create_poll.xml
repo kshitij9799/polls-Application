@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:fitsSystemWindows="true"
     tools:context=".fragments.CreatePollFragment">
     <LinearLayout
         android:layout_width="match_parent"
@@ -36,6 +37,7 @@
         android:textSize="17sp"
         android:text="@string/poll_question"/>
     <EditText
+        android:id="@+id/question_edit_text"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginTop="10dp"
@@ -107,6 +109,7 @@
         android:orientation="horizontal"
         android:focusable="true">
         <TextView
+            android:id="@+id/create_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"

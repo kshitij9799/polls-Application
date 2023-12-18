@@ -6,11 +6,20 @@
     tools:context=".fragments.CurrentPolls">
 
     <TextView
+        android:id="@+id/null_current_poll_text"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:textSize="19dp"
+        android:textSize="19sp"
         android:layout_marginTop="350dp"
         android:text="@string/the_polling_grounds_await_your_question" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/card_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:layout_margin="20dp"
+        />
 
 </FrameLayout>
